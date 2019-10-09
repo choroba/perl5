@@ -2793,6 +2793,10 @@ typedef struct padname PADNAME;
 #  define USE_ENVIRON_ARRAY
 #endif
 
+#if defined(HAS_SIGACTION) && defined(SA_SIGINFO)
+#define PERL_USE_3ARG_SIGHANDLER
+#endif
+
 /*
  * initialise to avoid floating-point exceptions from overflow, etc
  */
