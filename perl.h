@@ -2794,7 +2794,11 @@ typedef struct padname PADNAME;
 #endif
 
 #if defined(HAS_SIGACTION) && defined(SA_SIGINFO)
-#define PERL_USE_3ARG_SIGHANDLER
+/* Don't define this yet. The perl core can only fully cope with 1-arg
+ * signal handlers. See the commit message associated with this comment
+ * for fuller details.
+ * #define PERL_USE_3ARG_SIGHANDLER
+ */
 #endif
 
 /*

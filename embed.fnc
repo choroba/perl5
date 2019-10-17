@@ -1682,6 +1682,11 @@ Axpd	|OP*	|op_scope	|NULLOK OP* o
 pe	|void	|set_caret_X
 Apd	|void	|setdefout	|NN GV* gv
 Ap	|HEK*	|share_hek	|NN const char* str|SSize_t len|U32 hash
+Tp	|Signal_t |sighandler1	|int sig
+ATp	|Signal_t |csighandler1	|int sig
+Tp	|Signal_t |sighandler3	|int sig|NULLOK siginfo_t *info|NULLOK void *uap
+ATp	|Signal_t |csighandler3	|int sig|NULLOK siginfo_t *info|NULLOK void *uap
+ATp	|Signal_t |perly_sighandler	|int sig|NULLOK siginfo_t *info|NULLOK void *uap|bool safe
 #ifdef PERL_USE_3ARG_SIGHANDLER
 : Used in perl.c
 Tp	|Signal_t |sighandler	|int sig|NULLOK siginfo_t *info|NULLOK void *uap

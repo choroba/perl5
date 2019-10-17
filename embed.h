@@ -96,6 +96,8 @@
 #define croak_no_modify		Perl_croak_no_modify
 #define croak_sv(a)		Perl_croak_sv(aTHX_ a)
 #define croak_xs_usage		Perl_croak_xs_usage
+#define csighandler1		Perl_csighandler1
+#define csighandler3		Perl_csighandler3
 #ifndef NO_MATHOMS
 #define custom_op_desc(a)	Perl_custom_op_desc(aTHX_ a)
 #endif
@@ -432,6 +434,7 @@
 #define parse_stmtseq(a)	Perl_parse_stmtseq(aTHX_ a)
 #define parse_subsignature(a)	Perl_parse_subsignature(aTHX_ a)
 #define parse_termexpr(a)	Perl_parse_termexpr(aTHX_ a)
+#define perly_sighandler	Perl_perly_sighandler
 #define pmop_dump(a)		Perl_pmop_dump(aTHX_ a)
 #define pop_scope()		Perl_pop_scope(aTHX)
 #define pregcomp(a,b)		Perl_pregcomp(aTHX_ a,b)
@@ -1411,6 +1414,8 @@
 #define setfd_cloexec_or_inhexec_by_sysfdness(a)	Perl_setfd_cloexec_or_inhexec_by_sysfdness(aTHX_ a)
 #define setfd_inhexec		Perl_setfd_inhexec
 #define setfd_inhexec_for_sysfd(a)	Perl_setfd_inhexec_for_sysfd(aTHX_ a)
+#define sighandler1		Perl_sighandler1
+#define sighandler3		Perl_sighandler3
 #define sub_crush_depth(a)	Perl_sub_crush_depth(aTHX_ a)
 #define sv_2num(a)		Perl_sv_2num(aTHX_ a)
 #define sv_clean_all()		Perl_sv_clean_all(aTHX)
